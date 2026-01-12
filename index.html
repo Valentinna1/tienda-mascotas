@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tienda Peluditos - Tienda de Mascotas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap-overrides.css">
+  
+  <meta name="description" content="Tienda Peluditos - Alimentos, juguetes y accesorios para mascotas. Entrega en tu zona.">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" py-3 shadow-sm>
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/img/logo.jpg" alt="Logo Tienda Peluditos" class="me-2 logo" width="44" height="44">
+          <span class="brand-title"> Los Peluditos</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+            <a href="pages/productos.html" class="nav-link">Productos</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#productos">Productos Destacados</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-item ms-3"><a class="btn btn-primary" href="#">Mi cuenta</a></li>       
+        
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main class="flex-grow-1">
+    <section class="hero bg-gradient d-flex align-items-center">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-5 lh-sm">Todo para mimar a tu mascota</h1>
+            <p class="lead">Alimentos premium, juguetes seguros y accesorios de calidad. Envíos en 48hs.</p>
+            <div class="d-flex gap-2">
+              <a href="#productos" class="btn btn-primary btn-lg">Ver productos</a>
+              <a href="#servicios" class="btn btn-outline-secondary btn-lg">Nuestros servicios</a>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block text-end">
+            <img src="assets/img/cat_dog.jpg" alt="Perro y gato felices" class="img-fluid hero-img" style="max-width:520px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PRODUCTOS -->
+    <section id="productos" class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="h3">Productos destacados</h2>
+          <div class="form-inline d-flex gap-2">
+            <select class="form-select" aria-label="Filtrar por categoria">
+              <option value="">Todas</option>
+              <option value="alimentos">Alimentos</option>
+              <option value="juguetes">Juguetes</option>
+              <option value="accesorios">Accesorios</option>
+            </select>
+            <input class="form-control" placeholder="Buscar..." aria-label="buscar" />
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card de producto (repetible) -->
+          <article class="col-6 col-md-4 col-lg-3" data-category="alimentos">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/alimentosperros.jpg" class="card-img-top" alt="Bolsa de alimento para perro" />
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 card-title">Alimento Balanceado 10kg</h3>
+                <p class="card-text text-muted small mb-2">Ideal para perros adultos</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <strong>$8.990</strong>
+                  <a class="btn btn-sm btn-outline-primary" href="#">Agregar</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-6 col-md-4 col-lg-3" data-category="juguetes">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/juguetesparagatos.jpg" class="card-img-top" alt="Juguete para gatos" />
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 card-title">Juguete interactivo</h3>
+                <p class="card-text text-muted small mb-2">Perfecto para gatos curiosos</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <strong>$2.190</strong>
+                  <a class="btn btn-sm btn-outline-primary" href="#">Agregar</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-6 col-md-4 col-lg-3" data-category="accesorios">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/accesorios1.jpg" class="card-img-top" alt="Accesorios para mascotas" />
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 card-title">Accesorios interactivo</h3>
+                <p class="card-text text-muted small mb-2">Perfecto para mascotas curiosas</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <strong>$3.200</strong>
+                  <a class="btn btn-sm btn-outline-primary" href="#">Agregar</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="h3 mb-4">Servicios</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="service-card p-4 h-100">
+              <h3 class="h5">Paseo y guardería</h3>
+              <p class="small text-muted">Paseos diarios y estadías cortas en nuestro espacio seguro.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card p-4 h-100">
+              <h3 class="h5">Baño y peluquería</h3>
+              <p class="small text-muted">Cortes, baño y limpieza con productos hipoalergénicos.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card p-4 h-100">
+              <h3 class="h5">Consultas veterinarias</h3>
+              <p class="small text-muted">Turnos programados y atención de urgencia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO / FOOTER INFO -->
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <h2 class="h4">Contacto</h2>
+            <p class="small text-muted">Envíanos tu consulta y te respondemos en menos de 24 horas.</p>
+
+            <form class="contact-form"  id="contact-form" action="#" method="post" novalidate>
+              <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input id="nombre" class="form-control" type="text" />
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label">Correo</label>
+                <input id="email" class="form-control" type="email" />
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label">Mensaje</label>
+                <textarea id="mensaje" class="form-control" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+
+          <div class="col-lg-6">
+            <h2 class="h4">Nuestra tienda</h2>
+            <p class="small text-muted">Calle Falucho 123 - Berazategui. Horario: Lun a Vie 9:00 - 18:00</p>
+            <ul class="list-unstyled">
+              <li><strong>Tel:</strong> (011) 1234-5678</li>
+              <li><strong>Email:</strong> contacto@peluditos.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-3 mt-auto">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small>© Peluditos 2025</small>
+      <div class="socials">
+        <a href="#" class="text-white me-2" aria-label="Instagram">IG</a>
+        <a href="#" class="text-white me-2" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+.btn-primary{background:var(--primario); border-color:var(--primario)}
+.btn-outline-primary{border-color:var(--primario); color:var(--primario)}
+.navbar{background:white}
+.navbar-toggler{border: none}
